@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+li{
+	float:left;
+	border:1px solid red;
+	}
+ li ul li{
+	position:relative;
+	border:none;
+	background:#0FF;
+	float:none;
+	}
+	li ul{
+		display:none;
+		}
+</style>
+<script type="text/javascript" >
+function testShow(num){
+	//alert("the show");
+	for(var i=1; i<5; i++){
+		var obj=document.getElementById("test"+i);
+		obj.style.display="none";
+		}
+	    var obj1=document.getElementById("test"+num);
+		obj1.style.display="block";
+	}
+</script>
+</head>
+
+<body>
+<input type="button"  value="click" onclick="testShow()" />
+ <ul>
+   <li onmouseover="testShow(1)">第一个第一层
+     <ul id="test1">
+      <li>第一个第二层</li>
+      <li>第一个第二层</li>
+     </ul>
+     
+   <li onmouseover="testShow(2)">第二个第一层
+     <ul id="test2" >
+       <li>第二个第二层</li>
+       <li>第二个第二层</li>
+     </ul>
+   <li  onmouseover="testShow(3)">
+     第三个第一层
+     <ul id="test3">
+       <li>第三个第二层</li>
+       <li>第三个第二层</li>
+     </ul>
+   </li>
+   <li onmouseover="testShow(4)">
+   第四个第一层
+     <ul id="test4" >
+       <li>第四个第二层</li>
+       <li>第四个第二层</li>
+     </ul>
+   </li>
+   <li></li>
+ </ul>
+  
+</body>
+</html>
