@@ -227,4 +227,19 @@ window.onload=change;
 window.onresize=function(){
 	scroll();
 	changecontent();
-}
+};
+
+//登陆层js
+$("#login :nth-child(2)").click(function(){
+	$(".login_all").css({
+		"display":"block"
+	});
+	$(".la_head div:first-child").css({
+		"border-bottom": "2px solid #FF6634"
+	});
+});
+$(".close_icon").click(function(){
+	$(".login_all").css({
+		"display":"none"
+	});
+});

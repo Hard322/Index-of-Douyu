@@ -598,6 +598,9 @@ h2 {
 }
 
 /*登陆层*/
+.login_all{
+	display: none;
+}
 #login_block {
 	position: fixed;
 	right:0;
@@ -610,8 +613,9 @@ h2 {
 }
 #login_area {
 	position: absolute;
-	top:30%;
-	left:30%;
+	top:25%;
+	left:50%;
+	margin-left:-187.5px;
 	width:375px;
 	border-radius: 10px;
 	background-color: white;
@@ -632,7 +636,6 @@ h2 {
 	height:55px;
 	text-align: center;
 	line-height: 55px;
-	border-bottom: 2px solid #FF6634;
 }
 .la_head_login {
 	margin:0 20px 0 30px;
@@ -642,13 +645,16 @@ h2 {
 	right:20px;
 	top:15px;
 }
-.threeways img{
+.threeways>a{
+	display: inline;
+}
+.threeways>a img{
 	margin-top:25px;
-	margin-right:50px;
+	margin-right:10px;
 	margin-bottom: 15px;
 }
-.threeways>img:first-child {
-	margin-left:50px;
+.threeways>a>img:first-child {
+	margin-left:40px;
 }
 .threeways p{
 	text-align:center;
@@ -688,8 +694,11 @@ h2 {
 	border-radius: 4px;
 	color:white;
 	border:0px;
-	margin:15px auto 15px;
+	margin:15px auto 15px 90px;
 }
 .noid {
 	text-align: center;
+}
+input:focus {
+	background: #EEF997;
 }
